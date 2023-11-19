@@ -2,10 +2,10 @@
 terraform {
 
   backend "azurerm" {
-    resource_group_name  = "dd-nonprd-scus-sbx-ga-kv-rg"
-    storage_account_name = "ddnonprdscussbxgakvv55"
+    resource_group_name  = "tx-storage-rg"
+    storage_account_name = "automationadminstorage"
     container_name       = "tfstate"
-    key                  = "hub/west/stage1/none/sic_mgmt.tfstate"
+    key                  = "prd/hub/scus/stage1/none/sic_mgmt.tfstate"
   }
 
   required_providers {
