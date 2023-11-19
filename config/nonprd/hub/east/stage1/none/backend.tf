@@ -5,7 +5,7 @@ terraform {
     resource_group_name  = "tx-storage-rg"
     storage_account_name = "automationadminstorage"
     container_name       = "tfstate"
-    key                  = "hub/east/stage1/none/sic_mgmt.tfstate"
+    key                  = "nonprd/hub/eus/stage1/none/sic_mgmt.tfstate"
   }
 
   required_providers {
