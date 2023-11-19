@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       
-      - name: "Checkout Sprint Branch"
+      - name: "Checkout Feature Branch"
         uses: actions/checkout@v3
       
       - uses: ./.github/actions/tf-folders
@@ -55,7 +55,7 @@ jobs:
 
     steps:
     
-      - name: "Checkout Sprint Branch"
+      - name: "Checkout Feature Branch"
         uses: actions/checkout@v3
 
       - name: "Echo Context"
