@@ -98,6 +98,11 @@ jobs:
       - name: "Update Git With Oauth Token"
         run: git config --global url."https://x-access-token:${{ steps.gh-app-auth.outputs.token }}@github.com".insteadOf ssh://git@github.com
 
+      - name: "Download Terraform"
+        uses: hashicorp/setup-terraform@v2
+        with:
+          terraform_version: 1.2.0
+
       - name: "Terraform Init"
         id: init
         run: |
