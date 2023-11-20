@@ -80,9 +80,9 @@ variable "tags_app_oc" {
 }
 
 variable "tags_cc" {
-  description = "(Optional) The Cost Center for all resources deployed. Example: 6709."
+  description = "(Optional) The Cost Center for all resources deployed. Example: 113."
   type        = string
-  default     = "6709"
+  default     = "113"
 }
 
 variable "tags_project" {
