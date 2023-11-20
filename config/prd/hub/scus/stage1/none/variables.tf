@@ -111,5 +111,9 @@ variable "color" {
   default     = "blue"
 }
 
-
+variable "billing_scope_id" {
+  description = "(Optional) Billing scope Id."
+  type        = string
+  default     = "null"
+}
 

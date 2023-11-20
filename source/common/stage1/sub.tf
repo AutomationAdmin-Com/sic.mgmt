@@ -7,15 +7,15 @@
 
 resource "azurerm_subscription" "nonprd_hub" {
   subscription_name = "nonprd-hub"
-  #billing_scope_id  = data.azurerm_billing_mca_account_scope.billing.id
+  billing_scope_id  = var.billing_scope_id # data.azurerm_billing_mca_account_scope.billing.id
 }
 
 resource "azurerm_subscription" "nonprd_spk" {
   subscription_name = "nonprd-spoke"
-  #billing_scope_id  = data.azurerm_billing_mca_account_scope.billing.id
+  billing_scope_id  = var.billing_scope_id
 }
 
 resource "azurerm_subscription" "prd_spk" {
   subscription_name = "prd-spoke"
-  #billing_scope_id  = data.azurerm_billing_mca_account_scope.billing.id
+  billing_scope_id  = var.billing_scope_id
 }
