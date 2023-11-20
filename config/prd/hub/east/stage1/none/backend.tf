@@ -2,7 +2,7 @@
 terraform {
 
   backend "azurerm" {
-    resource_group_name  = "tx-storage-rg"
+    resource_group_name  = "aa-prd-scus-hub-1-unmanaged-rg"
     storage_account_name = "automationadminstorage"
     container_name       = "tfstate"
     key                  = "prd/hub/eus/stage1/none/sic_mgmt.tfstate"
