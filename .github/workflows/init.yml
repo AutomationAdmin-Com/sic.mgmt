@@ -86,7 +86,9 @@ jobs:
       - name: "Azure Login"
         uses: azure/login@v1
         with:
-          creds: ${{ secrets.AZURE_CREDENTIALS }}
+          client-id: ${{ secrets.TENANT_ID }}
+          tenant-id: ${{ secrets.TENANT_ID }}
+          subscription-id: ${{ secrets.SUB_ID }}
 
       - name: "Get Github App Token"
         id: gh-app-auth
