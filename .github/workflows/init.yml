@@ -130,7 +130,7 @@ jobs:
         env:
           TF_VAR_tenant_id: ${{ secrets.TENANT_ID }}
           TF_VAR_client_id: ${{ secrets.CLIENT_ID }}
-          TF_VAR_client_secret: ${{ secrets.CLIENT_SECRET }}
+          #TF_VAR_client_secret: ${{ secrets.CLIENT_SECRET }}
           TF_VAR_subscription_id: ${{ secrets.SUB_ID }}
           TF_VAR_hub_subscription_id: ${{ secrets.SUB_ID }}
           TF_VAR_billing_scope_id: ${{ secrets.BILLING_ID }}
@@ -147,7 +147,7 @@ jobs:
         env:
           TF_VAR_tenant_id: ${{ secrets.TENANT_ID }}
           TF_VAR_client_id: ${{ secrets.CLIENT_ID }}
-          TF_VAR_client_secret: ${{ secrets.CLIENT_SECRET }}
+          #TF_VAR_client_secret: ${{ secrets.CLIENT_SECRET }}
           TF_VAR_subscription_id: ${{ secrets.SUB_ID }}
           TF_VAR_hub_subscription_id: ${{ secrets.SUB_ID }}
           TF_VAR_billing_scope_id: ${{ secrets.BILLING_ID }}

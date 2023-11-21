@@ -19,7 +19,8 @@ terraform {
 
 provider "azurerm" {
   client_id                  = var.client_id
-  client_secret              = var.client_secret
+  use_oidc = true
+  #client_secret              = var.client_secret
   subscription_id            = var.subscription_id
   tenant_id                  = var.tenant_id
   skip_provider_registration = true
@@ -32,7 +33,8 @@ provider "azurerm" {
 
 provider "azurerm" {
   client_id                  = trimspace(var.client_id)
-  client_secret              = trimspace(var.client_secret)
+  use_oidc = true
+  #client_secret              = trimspace(var.client_secret)
   tenant_id                  = trimspace(var.tenant_id)
   alias                      = "domain-subscription"
   skip_provider_registration = true
@@ -46,7 +48,8 @@ provider "azurerm" {
 
 provider "azurerm" {
   client_id     = trimspace(var.client_id)
-  client_secret = trimspace(var.client_secret)
+  use_oidc = true
+  #client_secret = trimspace(var.client_secret)
   tenant_id     = trimspace(var.tenant_id)
   features {
     resource_group {
@@ -60,6 +63,7 @@ provider "azurerm" {
 
 provider "azuread" {
   client_id     = trimspace(var.client_id)
-  client_secret = trimspace(var.client_secret)
+  use_oidc = true
+  #client_secret = trimspace(var.client_secret)
   tenant_id     = trimspace(var.tenant_id)
 }
